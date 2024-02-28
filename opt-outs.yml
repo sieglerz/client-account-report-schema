@@ -2,7 +2,7 @@ opt_outs:
   gcid:
     - integer
     - required
-    - Global Customer ID generated in SFDC
+    - Global Customer ID generated in SFDC of the account which owns the opt-out
     - example: '5020588'
   email:
     - string

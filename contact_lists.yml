@@ -4,7 +4,7 @@ contact_lists:
     - required
     - name of the contact list
     - example: 'my_list'
-  total_record_count
+  total_record_count:
     - integer
     - required
     - total quantity of records on the list
@@ -62,6 +62,3 @@ contact_lists:
     - string
     - required
     - example: '2024-02-08T20:18:15Z'
-
- 
-  

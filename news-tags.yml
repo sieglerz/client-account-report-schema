@@ -1,0 +1,7 @@
+# What is the purpose of this data? Are there other attributes about tags that would be helpful to the upgrades team?
+news-tags:
+  tag_name:
+    - string
+    - required
+    - the name of the tag
+    - example: 'football'

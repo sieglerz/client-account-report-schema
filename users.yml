@@ -18,12 +18,17 @@ users:
     - string
     - optional
     - phone number to contact the user
-    - example: '+19724440123`
+    - example: '+19724440123'
   timezone:
     - string
     - optional
     - timezone where user logs in to application
     - example: 'Central Standard Time (UTC-06:00)'
+# What is  the significance of "active"?
+  # active:
+  #   - 
+  #   -
+  #   - 
   user-role-source:
     - string
     - required

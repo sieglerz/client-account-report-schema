@@ -11,7 +11,7 @@ public_contacts:
     - example: 'The New York Times'
   phonenumber_1:
     - string
-    - optional
+    - required
     - phone number of the outlet
     - example: '123456789'
   phonenumber_2:
@@ -34,25 +34,6 @@ public_contacts:
     - optional
     - email of the outlet
     - example: 'bill2@example.com'
-  job_title:
-    - string
-    - optional
-    - job title of the contact
-    - example: 'Editor'
-  language:
-    - string
-    - optional
-    - the contact's native language
-  twitter:
-    - string
-    - optional
-    - full URL of the twitter profile
-    - example: 'https://twitter.com/BBCNews'
-  linkedin:
-    - string
-    - optional
-    - full URL of the linkedin profile
-    - example: 'https://www.linkedin.com/company/bbc-news'
   notes:
     - string
     - optional
@@ -98,8 +79,9 @@ public_contacts:
     - optional
     - country
     - example: 'Fake Country'
-  related_lists:
-    - array of strings
-    - required
-    - array of all contact list IDs which include this outlet
-    - example: 'FU5M0G0B7SAP1Z9foPpq, PV-t224B7SAP1Z9f86HL,gN28224BTjdUEXs6BYLn'
+  # How should related lists be displayed here?
+  # related_lists:
+  #   - array of strings
+  #   - required
+  #   - array of all contact list IDs which include this private contact
+  #   - example: 'FU5M0G0B7SAP1Z9foPpq, PV-t224B7SAP1Z9f86HL,gN28224BTjdUEXs6BYLn'
