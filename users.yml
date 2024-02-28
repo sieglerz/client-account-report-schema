@@ -1,0 +1,40 @@
+users:
+  email:
+    - string
+    - required
+    - email address used to log in
+    - example: 'dolly.parton@Dollywood.com'
+  firstname:
+    - string
+    - optional
+    - first name of the person with the associated email address
+    - example: 'Dolly'
+  lastname:
+    - string
+    - optional
+    - last name of the person with the associated email address
+    - example: 'Parton'
+  phonenumber:
+    - string
+    - optional
+    - phone number to contact the user
+    - example: '+19724440123`
+  timezone:
+    - string
+    - optional
+    - timezone where user logs in to application
+    - example: 'Central Standard Time (UTC-06:00)'
+  user-role-source:
+    - string
+    - required
+    - example: 'NGC3 | C3'
+  user-roles:
+    - array of strings
+    - required
+    - an array of the human-readable names for each user role associated with this user.
+    - example: 'ROLE_USER, ROLE_REPORTS, ROLE_ALERTS, ROLE_DASHBOARD, ROLE_CUSTOMER_ADMIN'
+  customer-admin:
+    - boolean
+    - required
+    - if NGC3 user role 21 is present, set to true. Otherwise set to false. There will be different considerations for C3 user roles.
+    - example: 'TRUE'

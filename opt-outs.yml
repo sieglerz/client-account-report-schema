@@ -1,0 +1,26 @@
+opt_outs:
+  gcid:
+    - integer
+    - required
+    - Global Customer ID generated in SFDC
+    - example: '5020588'
+  email:
+    - string
+    - required
+    - email address which has been opted out of communication
+    - example: 'John.doe@nyt.com'
+  firstname:
+    - string
+    - optional
+    - first name of the person with the associated email address
+    - example: 'John'
+  lastname:
+    - string
+    - optional
+    - last name of the person with the associated email address
+    - example: 'Doe'
+  reason:
+    - string
+    - optional
+    - a description of the reason why this contact has opted out
+    - example: 'Unsubscribed from Newsletters | Unsubscribed from Email Announcements'
