@@ -24,11 +24,11 @@ users:
     - optional
     - timezone where user logs in to application
     - example: 'Central Standard Time (UTC-06:00)'
-# What is  the significance of "active"?
-  # active:
-  #   - 
-  #   -
-  #   - 
+  active:
+    - boolean
+    - required
+    - is this user active?
+    - example: 'TRUE'
   user-role-source:
     - string
     - required

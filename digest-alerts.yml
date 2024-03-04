@@ -1,4 +1,9 @@
 digest-alerts:
+  alert_name:
+    - string
+    - required
+    - display name of the alert
+    - example: 'test alert'
   schedule_frequency:
     - string
     - required
@@ -18,11 +23,21 @@ digest-alerts:
     - string
     - optional (required for Daily Digest and Weekly Snapshot)
     - example: '(GMT -6:00) Central'
-  alert_name:
-    - string
+  logo:
+    - URL
+    - optional
+    - the image uploaded by the user that is associated with this alert
+    - example: 'https://alert-logos.s3.amazonaws.com/0b702054-5f26-444c-9170-f2a425612f6e_logo.jpg'
+  group_syndications:
+    - boolean
     - required
-    - display name of the alert
-    - example: 'test alert'
+    - this field demonstrates whether or not this alert is set to "group syndications"
+    - example: 'TRUE'
+  top_tier_publications:
+    - boolean
+    - required
+    - this field demonstrates whether or not this alert is set to "top tier publications"
+    - example: 'FALSE'
   alert_user_id:
     - string|integer
     - required

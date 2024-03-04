@@ -123,9 +123,8 @@ private_contacts:
     - optional
     - id of the associated outlet on the source system
     - example: '12345'
-  # How should related lists be displayed here?
-  # related_lists:
-  #   - array of strings
-  #   - required
-  #   - array of all contact list IDs which include this private contact
-  #   - example: 'FU5M0G0B7SAP1Z9foPpq, PV-t224B7SAP1Z9f86HL,gN28224BTjdUEXs6BYLn'
+  related_lists:
+    - array of strings (alpha order)
+    - required
+    - array of all contact list names which include this private contact
+    - example: 'list 1, list 2, list 3'

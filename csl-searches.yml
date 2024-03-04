@@ -4,12 +4,11 @@ csl_searches:
     - required
     - Title of search
     - example: 'AXA future risks'
-#  Will there be similar searches from C3?
-  # search_source:
-  #   - string
-  #   - required
-  #   - source system for search
-  #   - example: 'NGC3 | C3'
+  search_account_source:
+    - string
+    - required
+    - source system for search
+    - example: 'NGC3 | C3'
   csl_search_boolean:
     - string
     - required

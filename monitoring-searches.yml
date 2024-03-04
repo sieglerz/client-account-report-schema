@@ -31,12 +31,12 @@ monitoring_searches:
     - string
     - required
     - The original boolean language used in the query
-    - example: 'data_source_s:\"factiva_globe_and_mail\"'
+    - example: '(("Samsung" OR "Apple") AND "tablet") NOT ("phones")'
   converted_boolean:
     - string
     - required
     - the results of converting the original_boolean using the script found at https://cision.onworld.ca/boolean-5/
-    - example: 'data_source_s:\"factiva_globe_and_mail\"'
+    - example: '(("Samsung" OR "Apple") AND "tablet") NOT ("phones")'
   shared:
     - boolean
     - required
@@ -45,8 +45,8 @@ monitoring_searches:
    - string
    - required
    - this is the category that a user has chosen to keep this search organized amongst other searches
-   - example: 'Company | Competitor | Crisis | Executive | Custom'
+   - example: 'Company | Competitor | Crisis | Executive | Custom | etc'
   campaigns:
-   - array of strings
-   - required (can be null)
+   - array of strings (alpha order)
+   - optional
    - example: 'Apple, Branding, David`s Campaign'

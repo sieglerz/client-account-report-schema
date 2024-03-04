@@ -54,6 +54,11 @@ contact_lists:
     - required
     - the name of the user who owns the list
     - example: 'Cali Tran'
+  linked_campaign_names:
+    - array of strings (alpha order)
+    - optional
+    - the list of campaigns associated with this list
+    - example: "campaign 1, campaign 2, campaign 3"
   list_creation_date:
     - string
     - required
