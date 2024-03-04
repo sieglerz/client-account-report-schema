@@ -1,0 +1,30 @@
+dashboards:
+  dashboard_name:
+    - string
+    - required
+    - Title of dashboard
+    - example: 'Factiva Globe and Mail - Adv'  
+  dashboard_user_id:
+    - string|integer
+    - required
+    - id of the user who owns the dashboard on the source system
+    - example: '12345'
+  dashboard_user_type:
+    - string
+    - required
+    - the source system of the user who owns the dashboard
+    - example: 'NGC3 | C3'
+  dashboard_user_name:
+    - string
+    - required
+    - the name of the user who owns the dashboard
+    - example: 'Cali Tran'
+  monitoring_search_names:
+    - array of strings
+    - required
+    - the list of monitoring searches associated with this dashboard
+    - example: 'Monitoring Search 1, Monitoring Search 2, Monitoring Search 3'
+  dashboard_last_modified_date:
+    - string
+    - required
+    - example: '2024-02-08T20:18:15Z'

@@ -1,0 +1,130 @@
+private_contacts:
+  salutation:
+    - string
+    - optional
+    - Prefix used to address a person
+    - example: 'Mr. | Mrs. | Ms | Herr | Frau'
+  firstname:
+    - string
+    - required
+    - first name of the contact
+    - example: 'John'
+  lastname:
+    - string
+    - required
+    - last name/family name of the contact
+    - example: 'Doe'
+  phonenumber_1:
+    - string
+    - optional
+    - phone number of the outlet
+    - example: '123456789'
+  phonenumber_2:
+    - string
+    - optional
+    - phone number of the outlet
+    - example: '123456789'
+  faxnumber:
+    - string
+    - optional
+    - fax number of the outlet
+    - example: '123456789'
+  email_1:
+    - string
+    - required
+    - email of the outlet
+    - example: 'bill@example.com'
+  email_2:
+    - string
+    - optional
+    - email of the outlet
+    - example: 'bill2@example.com'
+  job_title:
+    - string
+    - optional
+    - job title of the contact
+    - example: 'Editor'
+  language:
+    - string
+    - optional
+    - the contact's native language
+  twitter:
+    - string
+    - optional
+    - full URL of the twitter profile
+    - example: 'https://twitter.com/BBCNews'
+  linkedin:
+    - string
+    - optional
+    - full URL of the linkedin profile
+    - example: 'https://www.linkedin.com/company/bbc-news'
+  notes:
+    - string
+    - optional
+    - notes about the outlet
+    - example: 'This is a note'
+  line1:
+    - string
+    - optional
+    - address line 1
+    - example: '123 Fake Street'
+  line2:
+    - string
+    - optional
+    - address line 2
+    - example: 'Fake Town'
+  line3:
+    - string
+    - optional
+    - address line 3
+    - example: 'Fake County'
+  city:
+    - string
+    - optional
+    - city
+    - example: 'Fake City'
+  state:
+    - string
+    - optional
+    - state
+    - example: 'Fake State'
+  county:
+    - string
+    - optional
+    - county
+    - example: 'Fake County'
+  postalcode_zipcode:
+    - string
+    - optional
+    - postal code
+    - example: '12345'
+  countryname:
+    - string
+    - optional
+    - country
+    - example: 'Fake Country'
+  private_contact_type:
+    - string
+    - optional
+    - the source system of the contact
+    - example: 'NGC3 | C3'
+  private_contact_id:
+    - string
+    - optional
+    - id of the contact on the source system
+    - example: '12345'
+  associated_outlet_type:
+    - string
+    - optional
+    - the source system of the associated outlet
+    - example: 'NGC3 | C3'
+  associated_outlet_id:
+    - string
+    - optional
+    - id of the associated outlet on the source system
+    - example: '12345'
+  related_lists:
+    - array of strings (alpha order)
+    - required
+    - array of all contact list names which include this private contact
+    - example: 'list 1, list 2, list 3'

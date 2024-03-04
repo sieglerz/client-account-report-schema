@@ -1,0 +1,27 @@
+key_messages:
+# Work in progress
+#   dashboard_name:
+#     - string
+#     - required
+#     - Title of dashboard
+#     - example: 'TSCRA Weekly Report'
+#   key_message_widget_name:
+#     - string
+#     - required
+#     - Name of key messages widget
+#     - example: 'Key Messages'
+#   key_message_search_name:
+#     - string
+#     - required
+#     - name of search associated with this key message widget
+#     - example: "Texas & Southwestern Cattle Raisers Association"
+#   key_message_terms:
+#     - array of strings (alpha order)
+#     - required
+#     - list of the terms associated with this widget
+#     - example: "Insurance, Jason Skaggs, Law Enforcement, Trade"
+#   key_message_terms_boolean:
+#     - array of objects
+#     - required
+#     - 
+#     -

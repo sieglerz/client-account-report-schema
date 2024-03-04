@@ -1,0 +1,38 @@
+csl_searches:
+  search_name:
+    - string
+    - required
+    - Title of search
+    - example: 'AXA future risks'
+  search_account_source:
+    - string
+    - required
+    - source system for search
+    - example: 'NGC3 | C3'
+  csl_search_boolean:
+    - string
+    - required
+    - The original boolean language used in the query
+    - example: 'author: @axa'
+  team:
+    - string
+    - required
+    - example: '[beta] Default project'
+  description:
+    - string
+    - optional
+    - description of the search in plain text
+    - example: 'This search focuses on posts written by @axa'
+  search_creation_date:
+    - string
+    - required
+    - example: '2023-09-11T12:13:32Z'
+  search_last_modified_date:
+    - string
+    - required
+    - example: '2024-02-08T20:18:15Z'
+  search_created_by:
+    - string
+    - required
+    - email address/username of the person who created the search
+    - example: 'aink@prime-research.com'

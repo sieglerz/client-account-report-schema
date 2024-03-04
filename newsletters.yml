@@ -1,0 +1,43 @@
+newsletter:
+  title:
+    - string
+    - required
+    - the title of the newsletter
+    - example: 'Test 8/9/21'
+  status:
+    - string
+    - required
+    - example: 'Sent | Draft | ???'
+  sent_date:
+    - string
+    - optional (required if status is 'Sent')
+    - example: 'Dec 22, 2023-09-11T12:13:32Z'
+  newsletter_user_id:
+    - string|integer
+    - required
+    - id of the user who owns the newsletter on the source system
+    - example: '12345'
+  newsletter_user_type:
+    - string
+    - required
+    - the source system of the user who owns the newsletter
+    - example: 'NGC3 | C3'
+  newsletter_user_name:
+    - string
+    - required
+    - the name of the user who owns the newsletter
+    - example: 'Cali Tran'
+  recipient_emails:
+    - array of strings
+    - required
+    - a list of the email addresses that recieve this alert
+    - example: 'zac.siegler@cision.com, kathryn.howell@cision.com, sean.kennedy@cision.com'
+  newsletter_last_modified_date:
+    - string
+    - required
+    - example: '2024-02-08T20:18:15Z'
+  campaigns:
+   - array of strings
+   - required (can be null)
+   - campaigns associated with this newsletter
+   - example: 'Apple, Branding, David`s Campaign'

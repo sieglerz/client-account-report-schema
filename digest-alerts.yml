@@ -1,0 +1,71 @@
+digest-alerts:
+  alert_name:
+    - string
+    - required
+    - display name of the alert
+    - example: 'test alert'
+  schedule_frequency:
+    - string
+    - required
+    - the frequency in which the alerts are sent to the recipients
+    - example: 'Realtime | Daily Digest | Weekly Snapshot'
+  day_of_week:
+    - string
+    - optional (Required only for Weekly Snapshot)
+    - the day of the week which the weekly snapshot is delivered
+    - example: 'Tuesday'
+  time_of_day:
+    - string
+    - optional (required for Daily Digest and Weekly Snapshot)
+    - the time of day in which the alert is delivered
+    - example: '12:00AM'
+  timezone:
+    - string
+    - optional (required for Daily Digest and Weekly Snapshot)
+    - example: '(GMT -6:00) Central'
+  logo:
+    - URL
+    - optional
+    - the image uploaded by the user that is associated with this alert
+    - example: 'https://alert-logos.s3.amazonaws.com/0b702054-5f26-444c-9170-f2a425612f6e_logo.jpg'
+  group_syndications:
+    - boolean
+    - required
+    - this field demonstrates whether or not this alert is set to "group syndications"
+    - example: 'TRUE'
+  top_tier_publications:
+    - boolean
+    - required
+    - this field demonstrates whether or not this alert is set to "top tier publications"
+    - example: 'FALSE'
+  alert_user_id:
+    - string|integer
+    - required
+    - id of the user who owns the alert on the source system
+    - example: '12345'
+  alert_user_type:
+    - string
+    - required
+    - the source system of the user who owns the alert
+    - example: 'GORKANA | NGC3 | C3'
+  alert_user_name:
+    - string
+    - required
+    - the name of the user who owns the alert
+    - example: 'Cali Tran'
+  recipient_emails:
+    - array of strings
+    - required
+    - a list of the email addresses that recieve this alert
+    - example: 'zac.siegler@cision.com, kathryn.howell@cision.com, sean.kennedy@cision.com'
+  search_names:
+    - array of strings
+    - required
+    - a list of the searches associated with this alert
+    - example: "search 1, search 2, search 3"
+  campaigns:
+    - array of strings
+    - required (may be null)
+    - a list of all of the campaigns associated with this alert
+    - example: 'Spring Fling 2022, es upgrade test, Factiva Dow Jones - Globe and Mail'
+  

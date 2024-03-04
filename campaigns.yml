@@ -1,0 +1,55 @@
+campaigns:
+  campaign_name:
+    - string
+    - required
+    - example: 'Spring Fling 2022'
+  campaign_user_id:
+    - string|integer
+    - required
+    - id of the user who owns the campaign on the source system
+    - example: '12345'
+  campaign_last_modified_date:
+    - string
+    - required
+    - the last time the campaign was modified
+    - example: '2023-09-11T12:13:32Z'
+  campaign_user_type:
+    - string
+    - required
+    - the source system of the user who owns the campaign
+    - example: 'NGC3 | C3'
+  campaign_user_name:
+    - string
+    - required
+    - the name of the user who owns the campaign
+    - example: 'Cali Tran'
+  search_names:
+    - array of strings (alpha order)
+    - optional
+    - a list of the searches associated with this campaign
+    - example: "search 1, search 2, search 3"
+  newsletter_names:
+    - array of strings (alpha order)
+    - optional
+    - a list of the newsletters associated with this campaign
+    - example: "Newsletter 1, Newsletter 3"
+  alert_names:
+    - array of strings (alpha order)
+    - optional
+    - a list of the alerts associated with this campaign
+    - example: "alert 1, alert 3"
+  dashboard_names:
+    - array of strings (alpha order)
+    - optional
+    - a list of the dashboard names associated with this campaign
+    - example: "Dashboard 1, Dashboard 2, Dashboard 3"
+  list_names:
+    - array of strings (alpha order)
+    - optional
+    - a list of the list names associated with this campaign
+    - example: "list 1, list 2, list 3"
+  report_names:
+    - array of strings (alpha order)
+    - optional
+    - a list of the report names associated with this campaign
+    - example: "report 1, report 2, report 3"

@@ -1,0 +1,52 @@
+monitoring_searches:
+  search_id_source:
+    - string
+    - required
+    - source system for search
+    - example: 'NGC3 | C3'
+  search_id:
+    - integer
+    - required
+    - reference ID in source system
+    - example: '11686010'
+  search_name:
+    - string
+    - required
+    - Title of search
+    - example: 'Factiva Globe and Mail - Adv'
+  search_owner:
+    - string
+    - required
+    - email address/username of the person who owns the search
+    - example: 'erlyn.lebron@cision.com'
+  search_creation_date:
+    - string
+    - required
+    - example: '2023-09-11T12:13:32Z'
+  search_last_modified_date:
+    - string
+    - required
+    - example: '2024-02-08T20:18:15Z'
+  original_boolean:
+    - string
+    - required
+    - The original boolean language used in the query
+    - example: '(("Samsung" OR "Apple") AND "tablet") NOT ("phones")'
+  converted_boolean:
+    - string
+    - required
+    - the results of converting the original_boolean using the script found at https://cision.onworld.ca/boolean-5/
+    - example: '(("Samsung" OR "Apple") AND "tablet") NOT ("phones")'
+  shared:
+    - boolean
+    - required
+    - example: 'TRUE'
+  category:
+   - string
+   - required
+   - this is the category that a user has chosen to keep this search organized amongst other searches
+   - example: 'Company | Competitor | Crisis | Executive | Custom | etc'
+  campaigns:
+   - array of strings (alpha order)
+   - optional
+   - example: 'Apple, Branding, David`s Campaign'
