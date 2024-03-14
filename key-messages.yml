@@ -1,27 +1,34 @@
 key_messages:
-# Work in progress
-#   dashboard_name:
-#     - string
-#     - required
-#     - Title of dashboard
-#     - example: 'TSCRA Weekly Report'
-#   key_message_widget_name:
-#     - string
-#     - required
-#     - Name of key messages widget
-#     - example: 'Key Messages'
-#   key_message_search_name:
-#     - string
-#     - required
-#     - name of search associated with this key message widget
-#     - example: "Texas & Southwestern Cattle Raisers Association"
-#   key_message_terms:
-#     - array of strings (alpha order)
-#     - required
-#     - list of the terms associated with this widget
-#     - example: "Insurance, Jason Skaggs, Law Enforcement, Trade"
-#   key_message_terms_boolean:
-#     - array of objects
-#     - required
-#     - 
-#     -
+  key_message_widget_name:
+    - string
+    - required
+    - Name of key messages widget
+    - example: 'Key Messages'
+  dashboard_name:
+    - string
+    - required
+    - Title of dashboard
+    - example: 'TSCRA Weekly Report'
+  key_message_search_name:
+    - string
+    - required
+    - name of search associated with this key message widget
+    - example: "Texas & Southwestern Cattle Raisers Association"
+  key_message_terms:
+    - array of strings (alpha order)
+    - required
+    - list of the terms associated with this widget
+    - example: "Insurance, Jason Skaggs, Law Enforcement, Trade"
+  key_message_terms_boolean:
+    - array of objects
+    - required
+    - this field should be represented as a parent child relationship. Parent = term, child = boolean. Each parent and child should be represented on a new line within the cell. 
+    - example: 
+        Insurance : "\"Insurance\" OR \"Insurance's\" OR \"Insurance’s\""
+        Jason Skaggs : "\"Jason Skaggs\" OR \"Jason Skaggs's\" OR \"Jason Skaggs’s\" OR \"Jason Skaggs'\" OR \"Jason Skaggs’\""
+        Law Enforcement : "\"Law Enforcement\" OR \"Law Enforcement’s\" OR \"Law Enforcement's\", Trade : \"Trade\" OR \"Trades\""
+  key_message_widget_type:
+    - string
+    - optional
+    - the source system of the key message widget
+    - example: 'NGC3 | C3'
